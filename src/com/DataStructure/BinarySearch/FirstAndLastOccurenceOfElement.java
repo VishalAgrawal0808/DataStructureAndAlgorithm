@@ -13,7 +13,6 @@ public class FirstAndLastOccurenceOfElement {
         int start = 0, end = a.length-1;
         int first = -1, last = -1;
 
-
         while(start<=end){
             int mid = (start+end)/2;
             if(ele==a[mid]){
