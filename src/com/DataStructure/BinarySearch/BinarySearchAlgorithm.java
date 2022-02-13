@@ -7,13 +7,13 @@ public class BinarySearchAlgorithm {
         System.out.println(BinarySearchAlgorithmCode(arr, ele));
     }
 
-    static boolean BinarySearchAlgorithmCode(int[] a, int ele){
+    static boolean BinarySearchAlgorithmCode(int[] a, int element){
         int start = 0, end = a.length-1;
         while(start<=end){
             int mid = (start+end)/2;
-            if(ele == a[mid])
+            if(element == a[mid])
                 return true;
-            else if(ele>a[mid]){
+            else if(element>a[mid]){
                 start = mid+1;
             }
             else{
