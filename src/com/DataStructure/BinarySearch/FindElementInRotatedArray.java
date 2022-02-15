@@ -3,7 +3,7 @@ package com.DataStructure.BinarySearch;
 public class FindElementInRotatedArray {
     public static void main(String[] args) {
         int[] a = {5, 6, 8, 11, 12, 15, 18, 2};
-        int ele = 18;
+        int ele = 8;
         System.out.println(FindElementInRotatedArrayCode(a,  ele));
     }
     static int FindElementInRotatedArrayCode(int[] a,int ele){
@@ -56,7 +56,6 @@ public class FindElementInRotatedArray {
             else if(a[mid]>a[prev] && a[mid]>a[next]){
                 mid++;
                 minEle = mid;
-                System.out.println("minEle"+minEle);
                 if(a[minEle]==ele){
                     return minEle;
                 }
