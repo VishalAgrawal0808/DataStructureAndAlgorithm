@@ -7,6 +7,7 @@ public class FindElementInRotatedArray {
         System.out.println(FindElementInRotatedArrayCode(a,  ele));
     }
     static int FindElementInRotatedArrayCode(int[] a,int ele){
+
         int start = 0, end = a.length-1, n = a.length;
         int minEle;
 
