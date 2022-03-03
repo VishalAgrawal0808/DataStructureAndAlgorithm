@@ -8,7 +8,7 @@ public class FindFloorOfAnElement {
     }
 
     static int FindFloorOfAnElementCode(int[] a, int ele){
-        int start = 0, end = a.length;
+        int start = 0, end = a.length-1;
         int result = Integer.MIN_VALUE;
         while(start<=end){
             int mid = (start+end)/2;
